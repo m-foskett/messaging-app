@@ -1,7 +1,8 @@
 {
   "expo": {
-    "name": "signal-clone",
-    "slug": "signal-clone",
+    "description": "This is a messaging application made using React Native, Typescript and Firebase.",
+    "name": "messaging-app",
+    "slug": "messaging-app",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -18,16 +19,24 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "host.exp.exponent"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "package": "host.exp.exponent"
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "cc321d1c-79a4-4c3c-ba2d-0cdcd72ed271"
+      }
+    },
+    "scheme": "host.exp.exponent"
   }
 }
